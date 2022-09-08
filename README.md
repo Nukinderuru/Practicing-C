@@ -60,3 +60,14 @@ I'm still working at some of these tasks so the repository will be regularly upd
 * **fibonacci.c** displays a number from the Fibonacci sequence (e.g. 18) using a recursive algorithm. The number is entered via stdin.
 
 * **math_functions.c** calculates and displays a table with three functions: the witch of Agnesi with diameter one, the lemniscate of Bernoulli with a unit interval in the positive half-plane (Y > 0), and a quadratic hyperbola. The first column lists the values of the X-axis from minus Pi through plus Pi, there should be 42 measurements at this interval; the second, third, and fourth columns describe the values ​​of the functions at a point.
+
+
+## Pointers and data input/output
+
+* **maxmin.c** finds max and min out of 3 integer numbers and displays them on the screen. The 3 integers are entered via stdin.
+
+* **squaring.c** receives an array of integers via stdin, squares them and outputs the result to stdout. The size of the array is received via stdin before the array itself.
+
+* **stat.c** receives an array of integers via stdin, displays it, calculates and displays on the new line a set of statistical metrics – maxima and minima, the expected value, and variance (assuming that we are dealing with a discrete uniform distribution).
+
+* **search.c** receives an array of integers via stdin and finds the first occurrence of a number that meets the following requirements in the array: it's an even number, it's equal to or above the expected value, it follows the three-sigma rule and it doesn't equal 0. The number is displayed via stdout. If such number doesn't exist, the program outputs 0.
