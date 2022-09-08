@@ -32,7 +32,7 @@ I'm still working at some of these tasks so the repository will be regularly upd
 
 1. [Level 1](#level-1) \
     1.1 [Basic control structures](#basic-control-structures) \
-    1.2 [Pointers and data input/output](#pointers-and-data-input/output) \
+    1.2 [Pointers and data input/output](#pointers-and-data-input-and-output) \
     1.3 [Sorting algorithms and arrays](#sorting-algorithms-and-arrays) \
     1.4 [Matrices and memory allocation](#matrices-and-memory-allocation) \
     1.5 [Strings](#strings)
@@ -62,7 +62,7 @@ I'm still working at some of these tasks so the repository will be regularly upd
 * **math_functions.c** calculates and displays a table with three functions: the witch of Agnesi with diameter one, the lemniscate of Bernoulli with a unit interval in the positive half-plane (Y > 0), and a quadratic hyperbola. The first column lists the values of the X-axis from minus Pi through plus Pi, there should be 42 measurements at this interval; the second, third, and fourth columns describe the values ​​of the functions at a point.
 
 
-## Pointers and data input/output
+## Pointers and data input and output
 
 * **maxmin.c** finds max and min out of 3 integer numbers and displays them on the screen. The 3 integers are entered via stdin.
 
