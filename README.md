@@ -1,7 +1,5 @@
 # Practicing C
 
-![some_picture](misc/images/)
-
 ## Overview
 
 Welcome dear programmer!
