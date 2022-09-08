@@ -32,7 +32,7 @@ I'm still working at some of these tasks so the repository will be regularly upd
 
 1. [Level 1](#level-1) \
     1.1 [Basic control structures](#basic-control-structures) \
-    1.2 [Pointers and data input/output](#pointers-and-data-input-and-output) \
+    1.2 [Pointers and data input and output](#pointers-and-data-input-and-output) \
     1.3 [Sorting algorithms and arrays](#sorting-algorithms-and-arrays) \
     1.4 [Matrices and memory allocation](#matrices-and-memory-allocation) \
     1.5 [Strings](#strings)
