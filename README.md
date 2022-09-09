@@ -71,3 +71,15 @@ I'm still working at some of these tasks so the repository will be regularly upd
 * **stat.c** receives an array of integers via stdin, displays it, calculates and displays on the new line a set of statistical metrics – maxima and minima, the expected value, and variance (assuming that we are dealing with a discrete uniform distribution).
 
 * **search.c** receives an array of integers via stdin and finds the first occurrence of a number that meets the following requirements in the array: it's an even number, it's equal to or above the expected value, it follows the three-sigma rule and it doesn't equal 0. The number is displayed via stdout. If such number doesn't exist, the program outputs 0.
+
+## Sorting algorithms and arrays
+
+* **sort.c** expects an stdin array with the length of 10 integers for input and outputs the same array sorted in ascending order (bubble sort is used here).
+
+* **fast_sort.c** sorts an array of 10 integer elements in ascending order using two different sorting algorithms with theoretical estimates of computational complexity no higher than nlog(n) (I used quicksort and heapsort).
+
+* **array_even_els_sum.c** receives the array's length and an array of integers. Outputs in stdout the sum of the even elements of the array and the newly formed array from the elements of the old one, by which the previously calculated sum is divided evenly.
+
+* **cycle_shift.c** receives a number `n` (size of the array), an array with `n` integers, and a number `c` by which all elements of the array must rotate to the left. If the value of `c` is negative, the shift in the array occurs to the right. A modified array is output via stdout.
+
+* **large_ints_arithmetic.c** returns the result of addition and subtraction of two very large numbers that were passed to the program as input in the form of arrays. Maximum number length: 100 elements of type int. The integers you enter are decimal digits.
