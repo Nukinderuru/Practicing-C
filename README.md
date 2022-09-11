@@ -14,7 +14,7 @@ I conditionally divided the tasks into 3 levels of difficulty:
     * Pointers and data input/output;
     * Sorting algorithms and arrays;
     * Matrices and memory allocation;
-    * Strings.
+    * Strings;
 * Level two contains tasks for practicing:
     * Structures;
     * Callbacks and varargs;
