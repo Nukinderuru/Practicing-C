@@ -1,5 +1,7 @@
 # Practicing C
 
+![title_image](misc/images/title.png)
+
 ## Overview
 
 Welcome dear programmer!
@@ -83,3 +85,9 @@ I'm still working at some of these tasks so the repository will be regularly upd
 * **cycle_shift.c** receives a number `n` (size of the array), an array with `n` integers, and a number `c` by which all elements of the array must rotate to the left. If the value of `c` is negative, the shift in the array occurs to the right. A modified array is output via stdout.
 
 * **large_ints_arithmetic.c** returns the result of addition and subtraction of two very large numbers that were passed to the program as input in the form of arrays. Maximum number length: 100 elements of type int. The integers you enter are decimal digits.
+
+## Matrices and memory allocation
+
+* **matrix.c** inputs and outputs integer matrices. Matrix memory allocation is implemented in 4 types: one static and 3 dynamic ones. You can find the descriptions of the latter in `materials` folder. The first integer passed via stdin is the way of memory allocation. Then you have to pass 2 arguements for the size of the matrix and finally - tha matrix itself.
+
+* **matrix_extended.c** calculates the maximum elements of the matrix in each of its rows and the minimum elements in each of its columns. The programm outputs these values as two arrays (an array of maximum elements in each row and an array of minimum elements in each column).
