@@ -91,3 +91,6 @@ I'm still working at some of these tasks so the repository will be regularly upd
 * **matrix.c** inputs and outputs integer matrices. Matrix memory allocation is implemented in 4 types: one static and 3 dynamic ones. You can find the descriptions of the latter in `materials` folder. The first integer passed via stdin is the way of memory allocation. Then you have to pass 2 arguements for the size of the matrix and finally - tha matrix itself.
 
 * **matrix_extended.c** calculates the maximum elements of the matrix in each of its rows and the minimum elements in each of its columns. The programm outputs these values as two arrays (an array of maximum elements in each row and an array of minimum elements in each column).
+* **matrix_sort.c** sorts the given matrix, putting rows with the minimum sum of elements first, followed by rows with the maximum sum of elements.
+
+* **matrix_arithmetic.c** performs one of the three operations: 1 – addition of two matrices, 2 – multiplication, or 3 – transposition.
