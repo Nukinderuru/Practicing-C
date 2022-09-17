@@ -73,13 +73,13 @@ int main() {
     matrix2 = malloc(n * m * sizeof(int) 
         + n * sizeof(int *));
     if (matrix1 != NULL && matrix2 != NULL) {
-        int *ptr1 = (int *)(matrix1 + n * sizeof(int *));
+        int *ptr1 = (int *)(matrix1 + n);
         for (int i = 0; i < n; i++) {
-            matrix1[i] = ptr1 + m * i * sizeof(int);
+            matrix1[i] = ptr1 + m * i;
         }
-        int *ptr2 = (int *)(matrix2 + n * sizeof(int *));
+        int *ptr2 = (int *)(matrix2 + n);
         for (int i = 0; i < n; i++) {
-            matrix2[i] = ptr2 + m * i * sizeof(int);
+            matrix2[i] = ptr2 + m * i;
         }
         if (operation == 1 || operation == 2) {
             int status1 = input(matrix1, n, m);
