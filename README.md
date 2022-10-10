@@ -98,3 +98,5 @@ I'm still working at some of these tasks so the repository will be regularly upd
 * **electro_snake.c** performs the sorting of the given matrix in a snake-like order vertically and horizontally, and outputs the sorted matrices in the same order, one after another, with an empty line in between. The size of the matrix is passed via stdin (2 intengers). Then the matrix itself is passed.
 
 * **det.c** calculates and outputs the determinant of the given square matrix with float numbers.
+
+* **invert.c** calculates and outputs the inverse matrix for the given square matrix with float numbers.
