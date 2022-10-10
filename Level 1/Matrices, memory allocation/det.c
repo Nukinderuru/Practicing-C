@@ -14,20 +14,6 @@ int input(int **data, int n, int m) {
     return 0;
 }
 
-void output(int **data, int n, int m) {
-for (int i = 0; i < n; i++) {
-    for (int j = 0; j < m; j++) {
-        printf("%d", data[i][j]);
-        if (j < m - 1) {
-            printf(" ");
-        }
-    }
-    if (i < n - 1)
-        printf("\n");
-    }
-    printf("\n");
-}
-
 void getMatrixWithoutRowAndCol(int **matrix, int size, int row, int col, int **newMatrix) {
     int offsetRow = 0;
     int offsetCol = 0;
