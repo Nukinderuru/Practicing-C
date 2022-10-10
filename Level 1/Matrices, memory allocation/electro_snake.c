@@ -2,6 +2,7 @@
 #include <stdlib.h>
 
 int input(int **data, int n, int m) {
+    printf("Now enter yout matrix:\n");
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < m; j++) {
             if (scanf("%d", &data[i][j]) != 1) {
@@ -44,44 +45,55 @@ void output_horizontal(int **data, int n, int m) {
             printf("\n");
         }
     }
-    if (n < m) {
-        printf("\nYep, I know there's a mysterious 10 at the beginning. Will figure it out later :)\n");
-    }
 }
 
 void output_vertical(int **data, int n, int m) {
-    if (n == m) {
-        int k = n - 1;
+    int **new_matrix = malloc(n * m * sizeof(int) 
+    + n * sizeof(int *));
+    if (new_matrix != NULL) {
+        int *new_ptr = (int *)(new_matrix + n);
         for (int i = 0; i < n; i++) {
-            for (int j = 0; j < m; j++) {
-                if (j % 2 == 0) {
-                    printf("%d", data[j][i]);
-                } else {
-                    printf("%d", data[j][k]); 
-                    k--;
+            new_matrix[i] = new_ptr + m * i;
+        }
+        int count = 0, i = 0, j = 0;
+        while (count != n * m) {
+            for (int k = 0; k < n; k++) {
+                for (int l = 0; l < m; l++) {
+                    new_matrix[i][j] = data[k][l];
+                    count++;
+                    if (j % 2 == 0) {
+                        if (i == n - 1) {
+                            j++;
+                        } else {
+                            i++;
+                        }
+                    } else {
+                        if (i == 0) {
+                            j++;
+                        } else {
+                            i--;
+                        }
+                    }
                 }
-                if (j < m - 1) {
-                    printf(" ");
-                }
-            }
-            if (i < n - 1) {
-                printf("\n");
             }
         }
-    } else {
-        printf("Sorry, I'm still working on non-square matrices :)\n");
+        output(new_matrix, n, m);
+        if (new_matrix != NULL) {
+            free(new_matrix);
+        }
     }
 }
 
 int main() {
     int n, m;
+    printf("Enter the size of your matrix (2 integers):\n");
     if (scanf("%d %d", &n, &m) == 2 && n > 0 && m > 0) {
         int **data = malloc(n * m * sizeof(int) 
         + n * sizeof(int *));
         if (data != NULL) {
-            int *ptr = (int *)(data + n * sizeof(int));
+            int *ptr = (int *)(data + n);
             for (int i = 0; i < n; i++) {
-                data[i] = ptr + m * i * sizeof(int *);
+                data[i] = ptr + m * i;
             }
             if (input(data, n, m) != 1) {
                 printf("\n");
