@@ -100,3 +100,19 @@ I'm still working at some of these tasks so the repository will be regularly upd
 * **det.c** calculates and outputs the determinant of the given square matrix with float numbers.
 
 * **invert.c** calculates and outputs the inverse matrix for the given square matrix with float numbers.
+
+## Strings
+
+Here I studied some of the basic functions from `string.h` standard library. To do that I recreated the following functions on my own:
+
+* strlen;
+* strcmp;
+* strcpy;
+* ctrcat;
+* strchr;
+* strstr;
+* strtok;
+
+To create my own strtok() I also had to recreate strcspn() and strspn().
+
+For each function there are corresponding tests (in `strings_tests.c` file). To compile a certain block of tests you can use `Makefile`. The stage names are: `my_strlen_tests`, `my_strcmp_tests` and so on. The executable files are compiled to the `build` folder under the names: `Test_1`, `Test_2` and so on.
