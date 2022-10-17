@@ -121,12 +121,12 @@ For each function there are corresponding tests (in `strings_tests.c` file). To 
 
 ## Game of life
 
-# Сборка
+### Сборка
 Чтобы собрать игру, в терминале перейдите в папку *Game of Life* и введите:
 ```
 gcc -Wall -Werror -Wextra -o run game_of_life.c -lncurses
 ```
-# Запуск игры
+### Запуск игры
 Чтобы запустить игру, в терминале перейдите в папку *Game of Life* и введите команду:
 ```
 ./run < ./game_files/*.txt  
