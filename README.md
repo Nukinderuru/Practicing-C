@@ -116,3 +116,18 @@ Here I studied some of the basic functions from `string.h` standard library. To 
 To create my own `strtok` I also had to recreate `strcspn` and `strspn`.
 
 For each function there are corresponding tests (in `strings_tests.c` file). To compile a certain block of tests you can use `Makefile`. The stage names are: `my_strlen_tests`, `my_strcmp_tests` and so on. The executable files are compiled to the `build` folder under the names: `Test_1`, `Test_2` and so on.
+
+## Level 3
+
+## Game of life
+
+# Сборка
+Чтобы собрать игру, в терминале перейдите в папку *Game of Life* и введите:
+```
+gcc -Wall -Werror -Wextra -o run game_of_life.c -lncurses
+```
+# Запуск игры
+Чтобы запустить игру, в терминале перейдите в папку *Game of Life* и введите команду:
+```
+./run < ./game_files/*.txt  
+```
