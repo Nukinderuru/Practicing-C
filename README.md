@@ -127,8 +127,8 @@ To compile the game run the following command from the *Game of Life* folder:
 gcc -Wall -Werror -Wextra -o run game_of_life.c -lncurses
 ```
 ### Starting the game
-To run the game from your terminal, run the following command from the *Game of Life* folder:
-(Indtead of * there should be the name of the file you want to use as your starting configuration.)
+To run the game from your terminal, run the following command from the *Game of Life* folder
+(Indtead of * there should be the name of the file you want to use as your starting configuration.):
 ```
 ./run < ./game_files/*.txt  
 ```
