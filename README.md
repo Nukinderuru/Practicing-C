@@ -117,6 +117,16 @@ To create my own `strtok` I also had to recreate `strcspn` and `strspn`.
 
 For each function there are corresponding tests (in `strings_tests.c` file). To compile a certain block of tests you can use `Makefile`. The stage names are: `my_strlen_tests`, `my_strcmp_tests` and so on. The executable files are compiled to the `build` folder under the names: `Test_1`, `Test_2` and so on.
 
+## Level 2
+
+## Structures
+
+* **door_struct.h** contains a simple structure which is used in **dmanager_module.c** to initialize an array of doors in ascending order by ids and display it in the following format: "door id, door status". 
+
+* **list.c** contains the basic functions for initializing a single linked list, adding elements to it, finding elements by id, removing elements from the list and destroying the list. **list_test.c** contains the tests checking if these functions work correctly. To compile it use the Makefile, stage name: list_test.
+
+* **stack.c** contains the basic functions for initializing a stack, pushing elements to it, popping elements from the list and destroying the list. **stack_test.c** contains the tests checking if these functions work correctly. To compile it use the Makefile, stage name: stack_test.
+
 ## Level 3
 
 ## Game of life
