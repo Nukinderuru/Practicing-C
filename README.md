@@ -129,7 +129,7 @@ For each function there are corresponding tests (in `strings_tests.c` file). To 
 
 ## Binary trees
 
-* **bst.c** ontains the functions for creating a binary tree node, inserting it, traversing the tree (infix, prefix and postfix traversal), searching a node and deleting a node.
+* **bst.c** contains the functions for creating a binary tree node, inserting it, traversing the tree (infix, prefix and postfix traversal), searching a node and deleting a node.
 
 * **bst_test.c** contains several tests, checking if the abovementioned functions work correctly.
 
