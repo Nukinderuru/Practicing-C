@@ -127,6 +127,12 @@ For each function there are corresponding tests (in `strings_tests.c` file). To 
 
 * **stack.c** contains the basic functions for initializing a stack, pushing elements to it, popping elements from the list and destroying the list. **stack_test.c** contains the tests checking if these functions work correctly. To compile it use the Makefile, stage name: stack_test.
 
+## Binary trees
+
+* **bst.c** ontains the functions for creating a binary tree node, inserting it, traversing the tree (infix, prefix and postfix traversal), searching a node and deleting a node.
+
+* **bst_test.c** contains several tests, checking if the abovementioned functions work correctly.
+
 ## Level 3
 
 ## Game of life
